@@ -7,7 +7,13 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
 )
 
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Welcome to the Blog API! The API endpoints are at /api/")
+
 urlpatterns = [
+    path('', home, name='home'),
     path('admin/', admin.site.urls),
     path('api/', include('blogapi.posts.urls')),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
