@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-akk#t_-&^be)*0xgqlkjj5f1*b(*6q)@+anp3d$6dqm)-4&qvq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['blog-api-vtbe.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
